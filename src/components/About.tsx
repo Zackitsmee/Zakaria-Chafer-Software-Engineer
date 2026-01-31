@@ -9,15 +9,9 @@ const TIMELINE = [
   },
   {
     year: 'University',
-    title: 'Computer Science / Software Engineering',
+    title: 'Computer Engineering',
     description:
-      'Completed a rigorous university curriculum in Computer Science, covering fundamentals of programming, data structures, algorithms, databases, and software architecture. Gained hands-on experience through projects and coursework in web development.',
-  },
-  {
-    year: 'Earlier',
-    title: 'Academic Foundation',
-    description:
-      'Strong foundation in mathematics and logic, which fuels my problem-solving approach in software development. Curiosity-driven learning that continues to this day.',
+      'Completed a rigorous university curriculum in Computer Engineering, covering fundamentals of programming, data structures, algorithms, databases, and software architecture. Gained hands-on experience through projects and coursework in web development.',
   },
 ];
 

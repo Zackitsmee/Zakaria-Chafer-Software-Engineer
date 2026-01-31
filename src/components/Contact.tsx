@@ -3,21 +3,21 @@ import { Linkedin, Github, Mail } from 'lucide-react';
 const LINKS = [
   {
     name: 'LinkedIn',
-    href: 'https://linkedin.com/in/zakaria-chafer',
+    href: 'https://www.linkedin.com/in/zakaria-chafer',
     icon: Linkedin,
     description: 'Connect professionally',
   },
   {
     name: 'GitHub',
-    href: 'https://github.com/zakariachafer',
+    href: 'https://github.com/Zackitsmee',
     icon: Github,
     description: 'View my projects',
   },
   {
     name: 'Gmail',
-    href: 'mailto:zakaria.chafer@gmail.com',
+    href: 'mailto:zakariachafer8@gmail.com',
     icon: Mail,
-    description: 'Send an email',
+    description: 'zakariachafer8@gmail.com',
   },
 ];
 
