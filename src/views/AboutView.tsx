@@ -1,12 +1,22 @@
 import { GraduationCap, Briefcase } from 'lucide-react';
-import type { ExperienceItem, EducationItem } from '../models/aboutModel';
+import { useTranslation } from 'react-i18next';
 
-interface AboutViewProps {
-  experience: ExperienceItem[];
-  education: EducationItem[];
-}
+export default function AboutView() {
+  const { t } = useTranslation();
 
-export default function AboutView({ experience, education }: AboutViewProps) {
+  const experience = t('about.experience', { returnObjects: true }) as Array<{
+    period: string;
+    title: string;
+    company: string;
+    description: string;
+  }>;
+
+  const education = t('about.education', { returnObjects: true }) as Array<{
+    period: string;
+    title: string;
+    institution: string;
+  }>;
+
   return (
     <section id="about" className="relative py-24 px-6">
       <div className="max-w-4xl mx-auto">
@@ -15,11 +25,10 @@ export default function AboutView({ experience, education }: AboutViewProps) {
           <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
             <Briefcase className="w-6 h-6 text-primary" />
           </div>
-          <h2 className="text-4xl font-bold text-foreground">Experience</h2>
+          <h2 className="text-4xl font-bold text-foreground">{t('about.experienceTitle')}</h2>
         </div>
         <p className="text-lg text-muted-foreground mb-16 max-w-2xl">
-          From university to the professional world, here is my academic and career
-          journey as a software engineer.
+          {t('about.experienceSubtitle')}
         </p>
         <div className="space-y-8 mb-24">
           {experience.map((item, i) => (
@@ -43,7 +52,7 @@ export default function AboutView({ experience, education }: AboutViewProps) {
           <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
             <GraduationCap className="w-6 h-6 text-primary" />
           </div>
-          <h2 className="text-4xl font-bold text-foreground">Education</h2>
+          <h2 className="text-4xl font-bold text-foreground">{t('about.educationTitle')}</h2>
         </div>
         <div className="space-y-8">
           {education.map((item, i) => (

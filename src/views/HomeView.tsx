@@ -1,5 +1,6 @@
 // @ts-expect-error - JSX component from shadcn registry
 import LiquidEther from '../components/LiquidEther';
+import { useTranslation } from 'react-i18next';
 import type { TechItem } from '../models/homeModel';
 
 interface HomeViewProps {
@@ -7,6 +8,8 @@ interface HomeViewProps {
 }
 
 export default function HomeView({ techStack }: HomeViewProps) {
+  const { t } = useTranslation();
+
   return (
     <section id="home" className="relative min-h-screen overflow-hidden">
       {/* LiquidEther Background */}
@@ -24,15 +27,12 @@ export default function HomeView({ techStack }: HomeViewProps) {
         {/* Hero / Intro */}
         <div className="flex-1 flex flex-col justify-center px-6 py-24 md:py-32">
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-primary font-medium mb-4">Full Stack Developer</p>
+            <p className="text-primary font-medium mb-4">{t('home.subtitle')}</p>
             <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 tracking-tight">
-              Hi, I&apos;m Zakaria Chafer
+              {t('home.title')}
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
-              I build modern web applications from front to back. With a passion for
-              clean architecture and seamless user experiences, I craft scalable
-              solutions using React, Angular, Node.js, and more. Let&apos;s build something
-              great together.
+              {t('home.description')}
             </p>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function HomeView({ techStack }: HomeViewProps) {
         {/* Tech Stack */}
         <div className="relative z-10 px-6 pb-24">
           <h2 className="text-3xl font-bold text-center mb-12 text-foreground">
-            Technologies I Use
+            {t('home.techTitle')}
           </h2>
           <div className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {techStack.map((tech) => (
