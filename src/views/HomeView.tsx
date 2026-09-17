@@ -1,18 +1,12 @@
 // @ts-expect-error - JSX component from shadcn registry
-import LiquidEther from './LiquidEther';
+import LiquidEther from '../components/LiquidEther';
+import type { TechItem } from '../models/homeModel';
 
-const TECH_STACK = [
-  { name: 'React', slug: 'react', color: '#61DAFB' },
-  { name: 'Angular', slug: 'angular', color: '#DD0031' },
-  { name: 'TailwindCSS', slug: 'tailwindcss', color: '#06B6D4' },
-  { name: 'TypeScript', slug: 'typescript', color: '#3178C6' },
-  { name: 'Python', slug: 'python', color: '#3776AB' },
-  { name: 'PostgreSQL', slug: 'postgresql', color: '#4169E1' },
-  { name: 'Postman', slug: 'postman', color: '#FF6C37' },
-  { name: 'Express', slug: 'express', color: '#E8E8E8' },
-];
+interface HomeViewProps {
+  techStack: TechItem[];
+}
 
-export default function Home() {
+export default function HomeView({ techStack }: HomeViewProps) {
   return (
     <section id="home" className="relative min-h-screen overflow-hidden">
       {/* LiquidEther Background */}
@@ -49,7 +43,7 @@ export default function Home() {
             Technologies I Use
           </h2>
           <div className="max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-            {TECH_STACK.map((tech) => (
+            {techStack.map((tech) => (
               <div
                 key={tech.name}
                 className="group flex items-center gap-4 p-5 rounded-2xl bg-card/80 border border-border/50 backdrop-blur-sm hover:border-white/20 hover:bg-card transition-all duration-300"
