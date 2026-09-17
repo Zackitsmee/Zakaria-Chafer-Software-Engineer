@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "subtitle": "Full-Stack-Entwickler",
+    "title": "Hallo, ich bin Zakaria Chafer",
+    "description": "Ich entwickle moderne Webanwendungen von Frontend bis Backend. Mit Leidenschaft für saubere Architektur und nahtlose Benutzererfahrungen erstelle ich skalierbare Lösungen mit React, Angular, Next.js, Node.js und mehr. Lassen Sie uns gemeinsam etwas Großartiges bauen.",
+    "techTitle": "Technologien, die ich verwende"
+  },
+  "about": {
+    "experienceTitle": "Berufserfahrung",
+    "experienceSubtitle": "Von der Universität in die Berufswelt – hier ist mein akademischer und beruflicher Werdegang als Softwareentwickler.",
+    "educationTitle": "Ausbildung",
+    "experience": [
+      {
+        "period": "Sep. 2025 – Aug. 2026",
+        "title": "Full-Stack-Entwickler",
+        "company": "DataStory, Casablanca",
+        "description": "Konzeption und Implementierung skalierbarer REST-APIs mit Node.js (Express) zur Verbesserung von Backend-Modularität und Antwortkonsistenz. Entwicklung dynamischer, komponentenbasierter Frontend-Anwendungen mit Angular, React und TypeScript. Erstellung von Unit-Tests mit Jest und Automatisierung von End-to-End-Tests mit Selenium und Postman. Versionsverwaltung und Teamzusammenarbeit über Git und GitHub unter Anwendung von Branching-Strategien und Code-Review-Praktiken."
+      },
+      {
+        "period": "Apr. 2025 – Mai 2025",
+        "title": "Full-Stack-Entwickler",
+        "company": "CMT Telecom et Communication, Casablanca",
+        "description": "Betreuung und Anpassung des E-Commerce-Betriebs mit Shopify, einschließlich Produktmanagement, Storefront-Optimierung und UX-Verbesserungen. Administration der Webhosting-Infrastruktur und der DNS-Einstellungen für eine stabile Website-Verfügbarkeit."
+      },
+      {
+        "period": "Jan. 2023 – Mai 2023",
+        "title": "Full-Stack-Entwickler",
+        "company": "HB Solutions, Rabat",
+        "description": "Hardwarewartung, Systemfehlerbehebung und IT-Management in der gesamten Unternehmensinfrastruktur. Entwicklung und Pflege von Weblösungen mit WordPress und verschiedenen CMS-Plattformen für zuverlässige kundenorientierte Auftritte. Mitarbeit an technischen Projekten mit analytischem Ansatz zur Lösung komplexer IT-Infrastrukturprobleme."
+      }
+    ],
+    "education": [
+      {
+        "period": "2026 – heute",
+        "title": "Master of Software Engineering and Artificial Intelligence",
+        "institution": "FH OÖ – Fachhochschule Oberösterreich, Campus Hagenberg"
+      },
+      {
+        "period": "Sep. 2021 – Jun. 2025",
+        "title": "Bachelor of Science in Computer Engineering",
+        "institution": "Nationale Universität Kryvyi Rih, Ukraine • 240 ECTS"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Lassen Sie uns vernetzen! Ob Sie ein Projekt im Sinn haben oder einfach nur Hallo sagen möchten – ich freue mich von Ihnen zu hören.",
+    "linkedin": "Professionell vernetzen",
+    "github": "Meine Projekte ansehen"
+  }
+}

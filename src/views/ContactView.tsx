@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import type { ContactLink } from '../models/contactModel';
 
 interface ContactViewProps {
@@ -5,15 +6,22 @@ interface ContactViewProps {
 }
 
 export default function ContactView({ links }: ContactViewProps) {
+  const { t } = useTranslation();
+
+  const getDescription = (link: ContactLink) => {
+    if (link.name === 'LinkedIn') return t('contact.linkedin');
+    if (link.name === 'GitHub') return t('contact.github');
+    return link.description;
+  };
+
   return (
     <section id="contact" className="relative py-24 px-6 bg-muted/30">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-4 text-foreground">
-          Get In Touch
+          {t('contact.title')}
         </h2>
         <p className="text-muted-foreground text-center mb-16 max-w-xl mx-auto">
-          Let&apos;s connect! Whether you have a project in mind or just want to say hi,
-          I&apos;d love to hear from you.
+          {t('contact.subtitle')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {links.map((link) => {
@@ -30,7 +38,7 @@ export default function ContactView({ links }: ContactViewProps) {
                   <Icon className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="font-semibold text-lg mb-1">{link.name}</h3>
-                <p className="text-sm text-muted-foreground">{link.description}</p>
+                <p className="text-sm text-muted-foreground">{getDescription(link)}</p>
               </a>
             );
           })}
