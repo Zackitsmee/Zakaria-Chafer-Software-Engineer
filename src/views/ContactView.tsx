@@ -1,27 +1,10 @@
-import { Linkedin, Github, Mail } from 'lucide-react';
+import type { ContactLink } from '../models/contactModel';
 
-const LINKS = [
-  {
-    name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/zakaria-chafer',
-    icon: Linkedin,
-    description: 'Connect professionally',
-  },
-  {
-    name: 'GitHub',
-    href: 'https://github.com/Zackitsmee',
-    icon: Github,
-    description: 'View my projects',
-  },
-  {
-    name: 'Gmail',
-    href: 'mailto:zakariachafer8@gmail.com',
-    icon: Mail,
-    description: 'zakariachafer8@gmail.com',
-  },
-];
+interface ContactViewProps {
+  links: ContactLink[];
+}
 
-export default function Contact() {
+export default function ContactView({ links }: ContactViewProps) {
   return (
     <section id="contact" className="relative py-24 px-6 bg-muted/30">
       <div className="max-w-4xl mx-auto">
@@ -33,7 +16,7 @@ export default function Contact() {
           I&apos;d love to hear from you.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {LINKS.map((link) => {
+          {links.map((link) => {
             const Icon = link.icon;
             return (
               <a
