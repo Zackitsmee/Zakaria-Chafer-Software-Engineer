@@ -85,6 +85,17 @@
           "Aufbau von Projekt- und Aufgabenmanagement-Funktionen.",
           "Entwicklung der Anwendung als von Jira inspirierte interne Lösung, die auf die Bedürfnisse des Unternehmens zugeschnitten ist."
         ]
+      },
+      {
+        "name": "Interne Datenanalyse-KI-Plattform",
+        "description": "Eine interne, KI-gestützte Datenanalyse-Plattform, entwickelt für Les Domaines, ein großes Unternehmen der Milch- und Joghurtbranche. Die Plattform liefert intelligente Einblicke und Analysen zur Unterstützung geschäftlicher Entscheidungsprozesse. Als Teil des QA-Teams war ich für die Validierung der Benutzeroberfläche, der Kernfunktionalitäten und der Geschäftsregeln verantwortlich, um unternehmensweite Qualitätsstandards sicherzustellen.",
+        "technologies": ["Manuelles Testen", "UI-Testing", "Geschäftsregel-Validierung", "Funktionales Testen", "KI-Plattform"],
+        "responsibilities": [
+          "Test der Benutzeroberfläche auf visuelle Konsistenz, Responsivität und Benutzerfreundlichkeit über die gesamte Plattform.",
+          "Validierung der Kernfunktionalitäten und Benutzer-Workflows zur Überprüfung des korrekten Verhaltens in verschiedenen Szenarien.",
+          "Überprüfung der Geschäftsregeln (règles métiers), um sicherzustellen, dass die KI-gestützten Analysen mit der domänenspezifischen Logik und den Anforderungen des Unternehmens übereinstimmen.",
+          "Identifizierung, Dokumentation und Meldung von Fehlern und Inkonsistenzen an das Entwicklungsteam."
+        ]
       }
     ]
   },

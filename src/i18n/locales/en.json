@@ -85,6 +85,17 @@
           "Built project and task management functionality.",
           "Developed the application as a Jira-inspired internal solution tailored to the company's needs."
         ]
+      },
+      {
+        "name": "Internal Data Analysis AI Platform",
+        "description": "An internal data analysis platform powered by AI, developed for Les Domaines, a major dairy and yoghurt products company. The platform provides intelligent insights and analytics to support business decision-making across operations. As part of the QA team, I was responsible for validating the UI, core functionalities, and business rules to ensure the platform met enterprise-grade quality standards.",
+        "technologies": ["Manual Testing", "UI Testing", "Business Rules Validation", "Functional Testing", "AI Platform"],
+        "responsibilities": [
+          "Tested the user interface to ensure visual consistency, responsiveness, and usability across the platform.",
+          "Validated core functionalities and user workflows to verify correct behavior under various scenarios.",
+          "Verified business rules (règles métiers) to ensure the AI-driven analytics aligned with the company's domain-specific logic and requirements.",
+          "Identified, documented, and reported bugs and inconsistencies to the development team."
+        ]
       }
     ]
   },
