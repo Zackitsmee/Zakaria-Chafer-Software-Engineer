@@ -49,7 +49,7 @@ export default function HomeView({ techStack }: HomeViewProps) {
                 className="group flex items-center gap-4 p-5 rounded-2xl bg-card/80 border border-border/50 backdrop-blur-sm hover:border-white/20 hover:bg-card transition-all duration-300"
               >
                 <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-white/10 p-2"
+                  className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0 bg-muted p-2"
                   style={{ color: tech.color }}
                 >
                   <img
