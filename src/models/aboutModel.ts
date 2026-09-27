@@ -44,6 +44,6 @@ export const EDUCATION: EducationItem[] = [
   {
     period: 'Sep 2021 – Jun 2025',
     title: 'Bachelor of Science in Computer Engineering',
-    institution: 'National University of Kryvyi Rih, Ukraine • 240 ECTS',
+    institution: 'National University of Kryvyi Rih, Ukraine',
   },
 ];

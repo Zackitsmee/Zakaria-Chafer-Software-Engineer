@@ -20,6 +20,7 @@ export default function NavView({ links, open, onToggle, onLinkClick }: NavViewP
   const getLabel = (link: NavLink) => {
     if (link.href === '#home') return t('nav.home');
     if (link.href === '#about') return t('nav.about');
+    if (link.href === '#projects') return t('nav.projects');
     if (link.href === '#contact') return t('nav.contact');
     return link.label;
   };

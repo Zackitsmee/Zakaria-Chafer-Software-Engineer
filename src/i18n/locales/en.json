@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
+    "projects": "Projects",
     "contact": "Contact"
   },
   "home": {
@@ -43,7 +44,47 @@
       {
         "period": "Sep 2021 – Jun 2025",
         "title": "Bachelor of Science in Computer Engineering",
-        "institution": "National University of Kryvyi Rih, Ukraine • 240 ECTS"
+        "institution": "National University of Kryvyi Rih, Ukraine"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "name": "Azul Agadir",
+        "website": "azul-agadir.com",
+        "description": "Azul Agadir is a web platform focused on the Agadir region, providing useful information and services for locals and tourists.",
+        "technologies": ["Angular", "E2E Testing", "WCAG 2.1 AA", "AI Chatbot Testing"],
+        "responsibilities": [
+          "Developed and worked on the frontend using Angular.",
+          "Worked on WCAG 2.1 AA accessibility to improve accessibility and usability.",
+          "Performed End-to-End (E2E) testing to validate important user flows.",
+          "Tested the AI chatbot, including its responses and delivery-related functionality."
+        ]
+      },
+      {
+        "name": "GameX AI",
+        "description": "GameX AI is a platform designed for Moroccan football clubs to support pre-match and post-match analysis. It uses AI to provide summaries and recommendations that can help teams better understand performance and improve their preparation. The platform also includes tracking data to support football performance analysis.",
+        "technologies": ["Next.js", "AI", "E2E Testing", "Unit Testing", "Football Analytics"],
+        "responsibilities": [
+          "Developed and contributed to the frontend using Next.js.",
+          "Worked on E2E testing to validate complete user workflows.",
+          "Implemented and maintained unit tests to ensure frontend components and functionality worked correctly."
+        ]
+      },
+      {
+        "name": "Work Manager",
+        "description": "Work Manager is an internal project management platform inspired by Jira. The goal was to provide the company with a seamless alternative for managing projects, tasks, users, and team workflows, reducing the company's dependency on expensive project-management software. I proposed the idea of building an internal solution that could cover the company's essential project-management needs while being adapted to its workflow.",
+        "technologies": ["React", "Express.js", "PostgreSQL", "JWT"],
+        "responsibilities": [
+          "Designed and developed the frontend using React.",
+          "Developed the backend using Express.js.",
+          "Worked with PostgreSQL for data management.",
+          "Implemented JWT-based authentication.",
+          "Built project and task management functionality.",
+          "Developed the application as a Jira-inspired internal solution tailored to the company's needs."
+        ]
       }
     ]
   },
